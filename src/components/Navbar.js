@@ -4,14 +4,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 // MAKING USE OF AUTH0 (authentication platform)
 const Navbar = () => {
-  const {
-    isAuthenticated,
-    loginWithRedirect,
-    logout,
-    user,
-    isLoading,
-  } = useAuth0();
-  console.log(isAuthenticated, user, isLoading);
+  const { isAuthenticated, logout, user } = useAuth0();
+  // console.log(isAuthenticated, user, isLoading);
   const isUser = isAuthenticated && user;
 
   return (
@@ -22,7 +16,7 @@ const Navbar = () => {
           Welcome , <strong>{user.name.toUpperCase()}</strong>
         </h4>
       )}
-      {isUser ? (
+      {isUser && (
         <button
           className="btn"
           onClick={() => {
@@ -31,8 +25,6 @@ const Navbar = () => {
         >
           logout
         </button>
-      ) : (
-        <button onClick={loginWithRedirect}>login</button>
       )}
     </Wrapper>
   );

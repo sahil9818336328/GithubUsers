@@ -4,8 +4,8 @@ import styled from "styled-components";
 import loginImg from "../images/login-img.svg";
 
 const Login = () => {
-  const { loginWithRedirect, isAuthenticated, user, isLoading } = useAuth0();
-  console.log(isAuthenticated, user, isLoading);
+  const { loginWithRedirect } = useAuth0();
+  // console.log(isAuthenticated, user, isLoading);
   return (
     <Wrapper>
       <div className="container">
