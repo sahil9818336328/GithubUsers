@@ -1,9 +1,4 @@
-## Starter Project
-
-- css provided (global styles, styled components)
-- folders/files already setup
-- all imports included (warnings)
-- index.js for easier imports
+### View my deployed app at :- https://search-github-users-react-2021.netlify.app
 
 ## Styled Components
 
@@ -71,8 +66,7 @@ version used - "react-router-dom": "^5.2.0",
 - Go to Settings Tab
 - Copy/Paste Domain, ClientID - can be public (or use .env)
 - Add Domain -
-  for now http://localhost:3000 (DON'T COPY PASTE FROM URL BAR)
-
+  for now http://localhost:3000 .
   - Allowed Callback URLs
   - Allowed Logout URLs
   - Allowed Web Origins
